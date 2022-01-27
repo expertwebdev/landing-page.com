@@ -51,7 +51,7 @@ nav{
     justify-content: space-between;
     background-color: var(--color-primary);
     color: var(--color-light);
-    height: max-content;
+    height: 3.5rem;
     width: 100%;
 }
 
@@ -132,12 +132,11 @@ main {
     justify-content: center;
     align-items: center;
     background-color: var(--color-light);
-    margin: 0;
     padding: 3rem 0;
 }
 
 .mainText {
-    width: 100%;
+    /* width: 100%; */
     height: max-content;
     padding: 0 3rem;
 }
@@ -164,10 +163,6 @@ main {
     color: var(--color-primary-lite);
     max-width: 18rem;
     padding: 1.2rem 0;
-}
-
-.mainImage{
-    position: relative;
 }
 
 .mainHeadImg {
@@ -347,7 +342,8 @@ main {
 }
 
 .fa-icon {
-    width: 2rem;
+    width: 2.5rem;
+    color: var(--color-light);
 }
 
 .footer-copyright {
