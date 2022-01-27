@@ -49,8 +49,8 @@ nav{
     justify-content: space-between;
     background-color: var(--color-primary);
     color: var(--color-light);
-    height: 12vh;
-    width: 100vw;
+    height: max-content;
+    width: 100%;
 }
 
 .branding {
@@ -135,7 +135,7 @@ main {
 }
 
 .mainText {
-    /* width: 100%; */
+    width: 100%;
     height: max-content;
     padding: 0 3rem;
 }
