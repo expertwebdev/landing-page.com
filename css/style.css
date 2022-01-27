@@ -166,8 +166,12 @@ main {
     padding: 1.2rem 0;
 }
 
+.mainImage{
+    position: relative;
+}
+
 .mainHeadImg {
-    max-width: 25rem;
+    max-width: 20rem;
     transition: .5s all ease-in-out;
 }
 
