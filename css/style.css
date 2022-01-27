@@ -40,7 +40,7 @@ body {
    
     font-size: 62.5%;
     background-color: var(--color-light);
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 nav{
@@ -50,6 +50,7 @@ nav{
     background-color: var(--color-primary);
     color: var(--color-light);
     height: 12vh;
+    width: 100vw;
 }
 
 .branding {
@@ -122,28 +123,28 @@ nav{
 }
 
 main {
-    width: 100%;
+    width: 100vw;
     height: max-content;
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: center;
     align-items: center;
     background-color: var(--color-light);
-    /* padding: 2rem 0; */
+    margin: 0;
     padding: 3rem 0;
 }
 
 .mainText {
-    width: max-content;
+    /* width: 100%; */
     height: max-content;
-    padding: 0 5rem;
+    padding: 0 3rem;
 }
 
 .mainHeadText {
     font-family: var(--font-primary);
     font-size: 2.5rem;
     font-weight: 800;
-    /* word-break: keep-all; */
+    word-break: keep-all;
     color: var(--color-primary);
     line-height: 3rem;
 }
@@ -159,7 +160,7 @@ main {
 
 .mainBodyText {
     color: var(--color-primary-lite);
-    width: 18rem;
+    max-width: 18rem;
     padding: 1.2rem 0;
 }
 
@@ -334,8 +335,9 @@ main {
 
 .icons-partnership {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    padding: .8rem 0;
+    padding: 1rem 0;
 }
 
 .fa-icon {
