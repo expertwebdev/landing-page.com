@@ -1,0 +1,432 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../font/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Varela-Round;
+    src: url(../font/VarelaRound-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    /* variables */
+    --color-primary: #031e3e;   /* color1 */
+    --color-primary-lite: #022b5b;  /* color2 */  
+    --color-secondary: #045b8c; /* color3 */
+    --color-secondary-lite: #0097fe;    /* color4 */
+    --color-light: #dee5e7; /* colorWhite */
+    --color-amber: #ffb700; /* color amber */
+    --font-primary: Varela-Round, sans-serif ;
+    --font-secondary: Poppins, sans-serif;
+    --img-hongkong: url(https://res.cloudinary.com/asifakhtarcloudinary/image/upload/c_thumb,w_500,g_face/v1636903349/PowerBankImages/Places/HongKong.jpg);
+    --img-dubai: url(https://res.cloudinary.com/asifakhtarcloudinary/image/upload/c_thumb,w_500,g_face/v1636903349/PowerBankImages/Places/Dubai.jpg);
+    --img-london: url(https://res.cloudinary.com/asifakhtarcloudinary/image/upload/c_thumb,w_500,g_face/v1636903349/PowerBankImages/Places/London.jpg);
+    --img-beijing: url(https://res.cloudinary.com/asifakhtarcloudinary/image/upload/c_thumb,w_500,g_face/v1636903349/PowerBankImages/Places/Beijing.jpg);
+    --img-tokyo: url(https://res.cloudinary.com/asifakhtarcloudinary/image/upload/c_thumb,w_500,g_face/v1636903349/PowerBankImages/Places/Tokyo.jpg);
+    --img-moscow: url(https://res.cloudinary.com/asifakhtarcloudinary/image/upload/c_thumb,w_500,g_face/v1636903349/PowerBankImages/Places/Moscow.jpg);
+    --img-newyork: url(https://res.cloudinary.com/asifakhtarcloudinary/image/upload/c_thumb,w_500,g_face/v1636903349/PowerBankImages/Places/NewYork.jpg);
+    --img-shenzhen: url(https://res.cloudinary.com/asifakhtarcloudinary/image/upload/c_thumb,w_500,g_face/v1636903349/PowerBankImages/Places/Shenzhen.jpg);
+   
+   
+    font-size: 62.5%;
+    background-color: var(--color-light);
+    /* overflow-x: hidden; */
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    height: 12vh;
+}
+
+.branding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    max-width: 15rem;
+}
+
+.logoIcon {
+    width: 2.8rem;
+}
+
+.logoText {
+    margin: 0 1rem;
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    font-weight: bold;
+    width: 20rem;
+    word-break: keep-all;
+}
+
+.navBar { 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navBar ul{
+    width: 100%;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navList {
+    display: block;
+    list-style: none;
+    width: 8rem;
+}
+
+.navLinks {
+    color: var(--color-light);
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: var(--font-primary);
+    font-weight: 500;
+}
+
+.navLinks:hover {
+    color: var(--color-amber);
+}
+
+.btn {
+    background-color: var(--color-secondary-lite);
+    color: var(--color-light);
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    padding: .4rem 1.5rem;
+    border-radius: .8rem;
+}
+
+.btn:hover {
+    background-color: var(--color-secondary);
+}
+
+main {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-light);
+    /* padding: 2rem 0; */
+    padding: 3rem 0;
+}
+
+.mainText {
+    width: max-content;
+    height: max-content;
+    padding: 0 5rem;
+}
+
+.mainHeadText {
+    font-family: var(--font-primary);
+    font-size: 2.5rem;
+    font-weight: 800;
+    /* word-break: keep-all; */
+    color: var(--color-primary);
+    line-height: 3rem;
+}
+
+.p-text {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    line-height: 1.4rem;
+    color: var(--color-light);
+    text-transform: capitalize;
+    word-break: keep-all;
+}
+
+.mainBodyText {
+    color: var(--color-primary-lite);
+    width: 18rem;
+    padding: 1.2rem 0;
+}
+
+.mainHeadImg {
+    max-width: 25rem;
+    transition: .5s all ease-in-out;
+}
+
+.mainHeadImg:hover {
+    transform: scale(1.05);
+}
+
+#downloadBtn {
+    padding: .5rem 3rem;
+}
+
+.container {
+    background: var(--color-primary);
+    padding: 2rem 0;
+    border-top: 1px solid var(--color-light);
+}
+
+.container-tittle {
+    text-align: center;
+    padding-bottom: 2rem ;
+    font-family: var(--font-primary);
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    color: var(--color-light);
+}
+
+.container-h2 {
+    color: var(--color-light);
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.container-p {
+    padding: 1.5rem;
+    text-align: center;
+    margin: 0;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 10rem;
+    height: max-content;
+    margin: .5rem;
+    padding: .2rem;
+    /* justify-content: space-around; */
+    align-items: center;
+    border-radius: 1rem;
+    background : linear-gradient(var(--color-secondary), var(--color-primary-lite));
+    color: var(--color-light);
+    display: flex;
+    flex-direction: column;
+    transition: .5s all ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-tittle {
+    width: 100%;
+    padding: .5rem 0;
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.card-img {
+    width: 9rem;
+    height: 5rem;
+    border-radius: .5rem;
+    margin: .5rem 0;
+    /* background: var(--color-primary); */
+}
+
+.card-body {
+    width: 100%;
+}
+.card-body p{
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-family: var(--font-secondary);
+    font-size: .8rem;
+    text-transform: capitalize;
+}
+
+.card-btn {
+    margin: .8rem 0;
+
+}
+
+.pricing-btn {
+    width: 100%;
+    padding: .3rem 3rem;
+}
+
+/* card-backgroud (city name) */
+.card-hongkong {
+    background: var(--img-hongkong);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card-dubai {
+    background: var(--img-dubai);
+}
+.card-london {
+    background: var(--img-london);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card-beijing {
+    background: var(--img-beijing);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card-tokyo {
+    background: var(--img-tokyo);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card-moscow {
+    background: var(--img-moscow);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card-newyork {
+    background: var(--img-newyork);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card-shenzhen {
+    background: var(--img-shenzhen);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    background : linear-gradient(var(--color-primary-lite), var(--color-primary));
+    padding: 1.5rem 0;
+}
+
+.footer-tittle {
+    color: var(--color-amber);
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    display: flex;
+    padding: .8rem 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-icon {
+    margin-right: 1rem;
+}
+
+.icons-partnership {
+    display: flex;
+    justify-content: center;
+    padding: .8rem 0;
+}
+
+.fa-icon {
+    width: 2rem;
+}
+
+.footer-copyright {
+    text-align: center;
+}
+
+@media all and (max-width: 901px) {
+
+nav {
+    flex-direction: column;
+    height: max-content;
+}
+
+.branding {
+    padding: .7rem 0;
+    
+}
+
+.navBar {
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.navBar ul {
+ flex-direction: column; 
+ padding: .8rem 0;
+}
+
+.navList{
+    width: 100%;
+    padding: .5rem 0;
+}
+.navLinks {
+    margin: 0;
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.navLinks:hover {
+    background: var(--color-primary-lite);
+}
+
+.toggleBar {
+        position: absolute;
+        cursor: pointer;
+        width: 2.5rem;
+        height: 2.2rem;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .toggleLine,
+    .toggleLine::before,
+    .toggleLine::after {
+        content: " ";
+        position: absolute;
+        cursor: pointer;
+        width: 2.4rem;
+        height: .3rem;
+        background: var(--color-light);
+        border-radius: .5rem;
+        transition: .5s all ease-in-out;
+    }
+
+    .toggleLine::before {
+        transform: translateY(-0.8rem);
+    }
+    
+    .toggleLine::after {
+        transform: translateY(0.8rem);
+    }
+
+    .toggleLine {
+        top: 1rem;
+    }
+
+    .open .toggleLine::before {
+        transform: rotate(45deg);
+    }
+
+    .open .toggleLine::after {
+        transform: rotate(-45deg);
+    }
+
+    .open .toggleLine {
+        background-color: transparent;
+    }
+
+}
