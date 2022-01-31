@@ -1,7 +1,7 @@
 {
     "name": "AlphaII",
     "short_name": "AlphaII",
-    "start_url": "#",
+    "start_url": "https://expertwebdev.github.io/landing-page.com/",
     "display": "standalone",
     "background_color": "#fff",
     "theme_color" : "#031e3e",
