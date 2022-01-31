@@ -1,7 +1,7 @@
 {
     "name": "Alpha Plan 2",
     "short_name": "Alpha2",
-    "start_url": "index.html/",
+    "start_url": "https://expertwebdev.github.io/landing-page.com/",
     "display": "standalone",
     "background_color": "#fff",
     "theme_color" : "#031e3e",
