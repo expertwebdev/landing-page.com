@@ -173,7 +173,12 @@ main {
 }
 
 #downloadBtn {
-  padding: 0.5rem 3rem;
+  background: var(--color-primary);
+  padding: 0.6rem 3rem;
+  font-family: var(--font-secondary);
+  font-weight: bold;
+  color: var(--color-light);
+  box-shadow: .3rem .3rem 1.2rem 0  var(--color-primary-lite);
 }
 
 /* Slide */
@@ -495,7 +500,7 @@ main {
   }
 
   #slideshow {
-    overflow: hidden;
+    overflow: scroll;
     height: 280px;
     width: 100%;
     margin: 0;
@@ -516,16 +521,19 @@ main {
   }
 
   @keyframes slide {
-    30% {
+    20% {
       margin-left: 0px;
     }
 
-    60% {
+    40% {
       margin-left: calc(-300px * 1);
     }
 
-    90% {
+    60% {
       margin-left: calc(-300px * 2);
+    }
+    80% {
+      margin-left: calc(-340px * 1);
     }
   }
 }
