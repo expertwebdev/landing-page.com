@@ -16,4 +16,19 @@ toggleBtn.addEventListener('click', () => {
 
 })
 
+window.addEventListener('load', ()=>{
+    document.querySelector(".mainImage").style.display= "block";
+})
+
+    function getParameter( parameterName ) {
+        let parameters = new URLSearchParams( window.location.search );
+        return parameters.get( parameterName );
+    }
+
+    let showRefcode = getParameter("refcode");
+
+    if (getParameter("refcode")){
+        refcodeAlert.innerHTML = `Referal Code <br> ${showRefcode}`;
+    }
+
 AOS.init();
