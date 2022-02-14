@@ -175,6 +175,7 @@ main {
 }
 
 .mainImage{
+  animation: fadeIn 2s linear;
   display: none;
 }
 
