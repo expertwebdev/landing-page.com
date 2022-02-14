@@ -1,6 +1,7 @@
 
-let toggleBtn = document.querySelector('.toggleBar');
-let navBar = document.querySelector('.navBar');
+const toggleBtn = document.querySelector('.toggleBar');
+const navBar = document.querySelector('.navBar');
+const refcodeAlert = document.querySelector('.alert_refcode');
 let active = false;
 toggleBtn.addEventListener('click', () => {
     if (active == false) {
@@ -16,19 +17,19 @@ toggleBtn.addEventListener('click', () => {
 
 })
 
-window.addEventListener('load', ()=>{
-    document.querySelector(".mainImage").style.display= "block";
+window.addEventListener('load', () => {
+    document.querySelector(".mainImage").style.display = "block";
 })
 
-    function getParameter( parameterName ) {
-        let parameters = new URLSearchParams( window.location.search );
-        return parameters.get( parameterName );
-    }
+function getParameter(parameterName) {
+    let parameters = new URLSearchParams(window.location.search);
+    return parameters.get(parameterName);
+}
 
-    let showRefcode = getParameter("refcode");
+let showRefcode = getParameter("refcode");
 
-    if (getParameter("refcode")){
-        refcodeAlert.innerHTML = `Referal Code <br> ${showRefcode}`;
-    }
+if (getParameter("refcode")) {
+    refcodeAlert.innerHTML = `Referal Code <br> ${showRefcode}`;
+}
 
 AOS.init();
